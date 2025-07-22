@@ -1,0 +1,78 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>33edc8db-0cc1-4653-9040-3fa66dfdd6ad</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>ColorGuayaba.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>OpenCV</Name>
+    <RootNamespace>OpenCV</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CapturaVideo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ColorGuayaba.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DeteccionColores.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetectorGuayaba.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DetectorObjetos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Drawing.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Graficas.py" />
+    <Compile Include="Interfaz.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MostrarImagen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MuestraVideo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="OpenCV.py" />
+    <Compile Include="ReproduccionVideo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Serial.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tamaños.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Tkinter-OpenCV.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="U4_Practica2.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
